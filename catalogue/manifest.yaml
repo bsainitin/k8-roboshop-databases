@@ -17,7 +17,7 @@ metadata:
     component: catalogue
     tier: backend
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       project: roboshop
@@ -97,4 +97,4 @@ spec:
       name: cpu
       target: 
         type: Utilization
-        averageUtilization: 5 # In real project use 70
+        averageUtilization: 50
